@@ -1,0 +1,13 @@
+# Core: env/, grpo/ (from-scratch PyTorch GRPO), tests/test_*.py.
+# This is all you need to run the toy GRPO trainer and the full test suite.
+numpy>=1.26
+scipy>=1.11
+torch>=2.2
+
+# HF causal-LM backend (grpo/hf_policy.py, train_grpo_torch.py --backend hf),
+# real attention extraction (scripts/extract_attention_maps.py), and the
+# TRL library trainer (scripts/grpo_train.py). Verified against trl==1.2.0.
+transformers>=4.44
+datasets>=2.20
+trl>=1.0
+accelerate>=0.33
